@@ -1,6 +1,6 @@
 {
-  "name": "zoom-it",
-  "version": "1.0.7",
+  "name": "smart-zoom",
+  "version": "1.0.0",
   "description": "Allows to pinch zoom, rotate, pan any HTML element.",
   "main": "zoom.js",
   "scripts": {
@@ -8,23 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anitasv/zoom.git"
+    "url": "git+https://github.com/sqer/zoom.git"
   },
   "keywords": [
+    "smart-zoom",
     "zoom",
     "pinch",
     "rotate",
     "pan"
   ],
-  "author": "Anita SV <anitasvasu@gmail.com> (https://github.com/anitasv/)",
+  "author": "Tomasz Sapiński <sapinski.tomek@gmail.com> (https://github.com/sqer/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anitasv/zoom/issues"
+    "url": "https://github.com/sqer/zoom/issues"
   },
-  "homepage": "https://github.com/anitasv/zoom#readme",
   "files": [
-    "zoom.js",
-    "zoom.min.js",
-    "README.md"
+    "zoom.js"
   ]
 }
