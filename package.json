@@ -1,6 +1,6 @@
 {
   "name": "smart-zoom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows to pinch zoom, rotate, pan any HTML element.",
   "main": "zoom.js",
   "scripts": {

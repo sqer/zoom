@@ -166,7 +166,7 @@ var justscale = function (a, b) {
  *
  * @return {Transform} that moves point 's' to point 'd'
  */
-var zoom = function (s, d, rotate) {
+var zoom = function (s, d, rotate,pan) {
     // Source vector.
     var a = minus(s[1], s[0]);
     // Destination vector.
@@ -177,7 +177,7 @@ var zoom = function (s, d, rotate) {
     // Position of s[0] if rotation is applied.
     var rs0 = apply(rs, s[0]);
     // Since d[0] = rs0 + t
-    var t = minus(d[0], rs0);
+    var t = pan ? minus(d[0], rs0) : 0;
 
     return new Transform(rs, t);
 };
@@ -369,7 +369,7 @@ function Zoom(elem, config, wnd) {
 }
 
 Zoom.prototype.previewZoom = function () {
-    var additionalZoom = zoom(this.srcCoords, this.destCoords, this.config.rotate);
+    var additionalZoom = zoom(this.srcCoords, this.destCoords, this.config.rotate, this.config.pan);
     this.resultantZoom = cascade(additionalZoom, this.activeZoom);
     this.repaint();
 };
